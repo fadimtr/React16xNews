@@ -1,11 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Repository Includes examples of latest features in React 16.x
+## Repository Includes examples of latest features in React 16.x
 
-## Hooks
-## Context API - Dynamic Theme example
-## Lazy & Suspense
-## Fragments
+### Hooks
+### Context API - Dynamic Theme example
+### Lazy & Suspense
+### Fragments
+
+------------------------------------------
 
 
 ## Available Scripts
