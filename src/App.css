@@ -36,3 +36,27 @@
 .todo-list .done{
     text-decoration: line-through;
 }
+
+.toggle-theme{
+  cursor: pointer;
+  border: 1px solid purple;
+  border-left:3px solid purple;
+  font-weight: bold;
+  padding-left:5px;
+  margin: 10px 0;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: whitesmoke;
+}
+
+button{
+  margin: 3px;
+}
+
+.hello-user{
+  background-color: azure;
+  padding: 15px;
+  margin: 5px;
+  display: inline-block;
+}

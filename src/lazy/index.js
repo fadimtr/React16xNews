@@ -1,7 +1,8 @@
 import React , { lazy, Suspense } from 'react';
-const LazyImport = lazy(() => import('./lazyImport'));
+// const LazyImport = lazy(() => import('./lazyImport'));
+import LazyImport from './lazyImport';
 
-class Hello extends React.Component {
+class Lazy extends React.Component {
 
     state = { render : false};
 
@@ -12,10 +13,11 @@ class Hello extends React.Component {
     }
 
     render() {
-        return <Suspense fallback={<div>Loading...</div>}>
-            {this.state.render && <LazyImport/>}
-        </Suspense>
+        return this.state.render && <LazyImport/>
+        // return <Suspense fallback={<div>Loading...</div>}>
+        //     {this.state.render && <LazyImport/>}
+        // </Suspense>
     }
 }
 
-export default Hello;
+export default Lazy;

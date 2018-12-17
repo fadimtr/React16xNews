@@ -7,6 +7,10 @@ class Button extends React.Component {
         return <button style={{backgroundColor: theme.background, color: theme.color}}>{this.props.value}</button>
     }
 }
+
 Button.contextType = ThemeContext;
 
-  export default Button;
+export default Button;
+
+
+// useContext

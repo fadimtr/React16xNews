@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
-import TodoList from './todoList/todoList';
-import TodoListHook from './todoList/todoListHook';
-import Hello from './hello/hello';
-import HelloHook from './hello/helloHook';
-import HelloWindow from './hello/helloWindow';
-import HelloWindowHook from './hello/helloWindowHook';
-import HelloMemo from './memo/hello';
-import Fragments from './fragments/hello';
-import Lazy from './lazy/index';
-import TryContext from './context/index';
+
+// Memo
+import Memo from './memo';
+// Fragments
+import Fragments from './fragments';
+// Lazy & Suspense
+import Lazy from './lazy';
+// Context API
+import Context from './context';
+// Hooks
+import Hooks from './hooks';
+import HelloHook from './hooks/helloHook';
+import HelloWindow from './hooks/helloWindow';
+import HelloWindowHook from './hooks/helloWindowHook';
 
 class App extends Component {
   render() {
     return (
-      <TryContext/>
+      <Hooks/>
     );
   }
 }

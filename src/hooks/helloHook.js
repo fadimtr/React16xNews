@@ -6,6 +6,12 @@ const HelloHook = () => {
     useEffect(() => {
         document.title = `Hello ${username}`;
     });
+    const [width,setWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const resizeHandler = setWidth(window.innerWidth);
+        window.addEventListener('resize', resizeHandler);
+        return () => window.removeEventListener('resize', resizeHandler);
+    }, [width])
 
     const updateUsername = (e) => {
         setUsername(e.target.value);

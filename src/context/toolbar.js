@@ -8,7 +8,7 @@ class Toolbar extends React.Component {
             <Button value='First'/>
             <Button value='second'/>
             <Button value='third'/>
-            <div onClick={this.props.toggleContext}>
+            <div className='toggle-theme' onClick={this.props.toggleContext}>
                 Toggle Theme
             </div>
         </>
